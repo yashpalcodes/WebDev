@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="greetingBar">
+      <h2 id="greeting">Hello!</h2>
+    </div>
+    <div class="screen">
+      <div class="main">
+        <div class="boxes" id="box-1" onclick="onClick_Box1()">Red</div>
+        <div class="boxes" id="box-2" onclick="onClick_Box2()">Blue</div>
+        <div class="boxes" id="box-3" onclick="onClick_Box3()">Green</div>
+        <div class="boxes" id="box-4" onclick="onClick_Box4()">Yellow</div>
+      </div>
+      <div class="form">
+        <form action="">
+          <input type="text" id="nameInput" placeholder="Enter your name" />
+          <button type="button" onclick="onClick_Button()">Greet</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
