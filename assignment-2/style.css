@@ -145,7 +145,7 @@ body {
   height: auto;
   object-fit: contain;
 }
-@meddia (max-width: 1200px) {
+@media (max-width: 1200px) {
   .wrapper {
     padding: 0 40px;
     gap: 40px;
