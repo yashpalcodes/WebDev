@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+      <div class="navs1">
+        <div class="logo">Logo</div>
+      </div>
+      <nav class="navs2">
+        <a href="#Home">Home</a>
+        <a href="#Services">Services</a>
+        <a href="#AboutUs">About Us</a>
+        <a href="#ContactUs">Contact Us</a>
+      </nav>
+      <div class="navs3">
+        <button type="button">Username</button>
+      </div>
+    </div>
+    //
+    <!-- SCREEN 1: -->
+    <div class="screen1">
+      <div class="wrapper">
+        <div class="card box b1">
+          <div class="head">
+            <h1>
+              <span class="dark-text"
+                >Revitalize Your<br />Clothes with Expert</span
+              ><br />
+              <span class="blue-text">Laundry Services!</span>
+            </h1>
+          </div>
+          <div class="main">
+            <p>
+              From premium dry cleaning to swift wash and fold, we<br />
+              deliver care and convenience. Schedule a pickup and<br />
+              rediscover the freshness of your clothes today!
+            </p>
+          </div>
+          <button class="cta-button" type="button">
+            Book a service today!
+          </button>
+        </div>
+        <div class="box b2">
+          <img src="images/img.png" alt="Laundry Machine" />
+        </div>
+      </div>
+      <div class="card box3">
+        <div class="achive1"><h2>Our Achievements</h2></div>
+        <div class="achive2">
+          <h3>15+</h3>
+          <p>Laundry Services</p>
+        </div>
+        <div class="achive3">
+          <h3>240+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="achive3">
+          <h3>2+ Yrs</h3>
+          <p>Experience</p>
+        </div>
+      </div>
+    </div>
+    <!-- SCREEN 2:  -->
+    <div class="screen2">
+      <div class="wrapper2">
+        <!-- LEFT: SERVICES LIST -->
+        <div class="card services">
+          <h1>Our Services</h1>
+          <p class="sub">
+            Click On The Add To Cart Button To Add The Services To Your Cart
+          </p>
+
+          <div class="service-row">
+            <p>🧥 Dry Cleaning : <span class="price">₹200.00</span></p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Dry Cleaning"
+              data-price="200"
+            >
+              Add Item ➕
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>🧺 Wash & Fold : <span class="price">₹100.00</span></p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Wash & Fold"
+              data-price="100"
+            >
+              Add Item ➕
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>🧼 Ironing : <span class="price">₹30.00</span></p>
+
+            <button class="add toggle-btn" data-name="Ironing" data-price="30">
+              Add Item ➕
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>🧽 Stain Removal : <span class="price">₹500.00</span></p>
+            <button
+              class="add toggle-btn"
+              data-name="Stain Removal"
+              data-price="500"
+            >
+              Add Item ➕
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>
+              👞 Leather & Suede Cleaning : <span class="price">₹999.00</span>
+            </p>
+            <button
+              class="add toggle-btn"
+              data-name="Leather & Suede Cleaning"
+              data-price="999"
+            >
+              Add Item ➕
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>
+              👗 Wedding Dress Cleaning : <span class="price">₹2800.00</span>
+            </p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Wedding Dress Cleaning"
+              data-price="2800"
+            >
+              Add Item ➕
+            </button>
+          </div>
+
+          <p class="note">ℹ Add the items to the cart and book now</p>
+        </div>
+
+        <!-- RIGHT: CART & BOOKING -->
+        <div class="card cart">
+          <div class="card addItems">
+            <h1>Added Items</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Service Name</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody id="cart-body"></tbody>
+            </table>
+          </div>
+          <div class="card total">
+            <span>Total Amount</span>
+            <strong id="total-amount">₹0.00</strong>
+          </div>
+          <div class="card bookNow">
+            <h1>Book Now</h1>
+
+            <input type="text" placeholder="Full Name" />
+            <div class="row">
+              <input type="email" placeholder="Email ID" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <button type="submit" class="book-btn">Book now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCREEN 3:  -->
+    <div class="screen3">
+      <!-- FEATURES -->
+      <div class="wrapper3">
+        <section class="card features">
+          
+          <div class="card feature">
+            <div class="icon">🧺</div>
+            <h3>Premium Services</h3>
+            <p>
+              Elevate your wardrobe with our meticulous dry cleaning, ensuring
+              garments look and feel as good as new.
+            </p>
+          </div>
+
+          <div class="card feature">
+            <div class="icon">🎧</div>
+            <h3>Quick Support</h3>
+            <p>
+              We're committed to providing prompt solutions to ensure your
+              experience is smooth and worry-free.
+            </p>
+          </div>
+
+          <div class="card feature">
+            <div class="icon">🚚</div>
+            <h3>Hassle Free Delivery</h3>
+            <p>
+              Enjoy seamless service with our convenient pickup and delivery
+              options, tailored to your schedule.
+            </p>
+          </div>
+
+          <div class="card feature">
+            <div class="icon">💰</div>
+            <h3>Affordable Prices</h3>
+            <p>
+              Experience exceptional care without breaking the bank — our
+              affordable prices make laundry stress-free.
+            </p>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="card newsletter">
+          <div class="newsletter-left">
+            <h2>Subscribe to our<br />newsletter.</h2>
+          </div>
+
+          <div class="newsletter-right">
+            <div class="details">
+              <input type="text" placeholder="Full name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <button type="submit">Subscribe</button>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="card footer">
+          <div class="card footer-col">
+            <h3>Logo</h3>
+            <p><b>About us</b></p>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur. Sed At Congue.</p>
+          </div>
+
+          <div class="card footer-col">
+            <h4>Important Links</h4>
+            <a href="#AboutUs">About us</a>
+            <a href="#CountactUs">Countact us</a>
+            <a href="#PrivacyPolicy">Privacy Policy</a>
+            <a href="#TermsOfUse">Terms of use</a>
+            <a href="#RefundPolicy">Refund Policy</a>
+          </div>
+
+          <div class="card footer-col">
+            <h4>Contact</h4>
+            <p>ms@dhoni.com</p>
+            <p>+91 91234 56780</p>
+          </div>
+
+          <div class="card footer-col">
+            <h4>Follow Us</h4>
+            <div class="socials">
+              <a href="https://www.facebook.com/yourprofile"
+                ><img
+                  src="images/facebook.webp"
+                  alt="Facebook"
+                  width="50"
+                  height="50"
+              /></a>
+              <a href="https://www.twitter.com/yourprofile"
+                ><img
+                  src="images/twitter.webp"
+                  alt="Twitter"
+                  width="50"
+                  height="50"
+              /></a>
+              <a href="https://www.instagram.com/yourprofile"
+                ><img
+                  src="images/instagram.webp"
+                  alt="Instagram"
+                  width="50"
+                  height="50"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
