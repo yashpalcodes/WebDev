@@ -50,5 +50,9 @@ buttons.forEach((button)=>{
     )
 })
 
-
+function scroll_to(){
+document.getElementById("scroll").scrollIntoView({
+    behavior : "smooth"
+});
+}
 
