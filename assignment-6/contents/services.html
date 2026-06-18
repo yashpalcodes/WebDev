@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+      <div class="navbar">
+        <nav class="navs2">
+        <a href="/home">Home</a>
+        </nav>
+      </div>
+    </header>
+        <div class="screen2">
+      <div class="wrapper2">
+
+        <div class="card services">
+          <h1>Our Services</h1>
+          <p class="sub">
+            Click On The Add To Cart Button To Add The Services To Your Cart
+          </p>
+
+          <div class="service-row">
+            <p>Dry Cleaning : <span class="price">₹200.00</span></p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Dry Cleaning"
+              data-price="200"
+            >
+              Add Item +
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p> Wash & Fold : <span class="price">₹100.00</span></p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Wash & Fold"
+              data-price="100"
+            >
+              Add Item +
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>Ironing : <span class="price">₹30.00</span></p>
+
+            <button class="add toggle-btn" data-name="Ironing" data-price="30">
+              Add Item +
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>Stain Removal : <span class="price">₹500.00</span></p>
+            <button
+              class="add toggle-btn"
+              data-name="Stain Removal"
+              data-price="500"
+            >
+              Add Item +
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>
+              Leather & Suede Cleaning : <span class="price">₹999.00</span>
+            </p>
+            <button
+              class="add toggle-btn"
+              data-name="Leather & Suede Cleaning"
+              data-price="999"
+            >
+              Add Item +
+            </button>
+          </div>
+
+          <div class="service-row">
+            <p>
+              Wedding Dress Cleaning : <span class="price">₹2800.00</span>
+            </p>
+
+            <button
+              class="add toggle-btn"
+              data-name="Wedding Dress Cleaning"
+              data-price="2800"
+            >
+              Add Item +
+            </button>
+          </div>
+
+          <p class="note"> Add the items to the cart and book now</p>
+        </div>
+
+
+        <div class="card cart" id="scroll">
+          <div class="card addItems">
+            <h1>Added Items</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Service Name</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody id="cart-body"></tbody>
+            </table>
+          </div>
+          <div class="card total">
+            <span>Total Amount</span>
+            <strong id="total-amount">₹0.00</strong>
+          </div>
+          <div class="card bookNow">
+            <h1>Book Now</h1>
+
+            <input type="text" placeholder="Full Name" />
+            <div class="row">
+              <input type="email" placeholder="Email ID" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <button type="submit" class="book-btn">Book now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>

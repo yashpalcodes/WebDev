@@ -1,0 +1,23 @@
+{
+  "name": "assignment-6",
+  "version": "1.0.0",
+  "description": "learning nodejs by building projects",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashpalcodes/WebDev.git"
+  },
+  "author": "yashpal singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashpalcodes/WebDev/issues"
+  },
+  "homepage": "https://github.com/yashpalcodes/WebDev#readme",
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
