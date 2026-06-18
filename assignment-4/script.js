@@ -32,17 +32,17 @@ buttons.forEach((button)=>{
         const index = cart.findIndex(item => item.name == name);
 
         if (index === -1) {
-        // ADD
+        // Add
         cart.push({ name, price });
         button.classList.remove("add");
         button.classList.add("remove");
-        button.textContent = "Remove Item ⛔️";
+        button.textContent = "Remove Item -";
       } else {
-        // REMOVE
+        // Remove
         cart.splice(index, 1);
         button.classList.remove("remove");
         button.classList.add("add");
-        button.textContent = "Add Item ➕";
+        button.textContent = "Add Item +";
       }
 
       updateTable();
@@ -50,8 +50,14 @@ buttons.forEach((button)=>{
     )
 })
 
-function scroll_to(){
+scroll_sevices = () =>{
 document.getElementById("scroll").scrollIntoView({
+    behavior : "smooth"
+});
+}
+
+scroll_home = () => {
+    document.getElementById("scroll_home").scrollIntoView({
     behavior : "smooth"
 });
 }
