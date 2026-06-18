@@ -1,5 +1,5 @@
-import UseFetch from './UseFetch.js';
-import "./Products.css";
+import UseFetch from './useFetch.js';
+import "./products.css";
 
 const Products = () => {
     const {data, loading, error} = UseFetch(
